@@ -1,23 +1,23 @@
 /// <reference types="Cypress"/>
 
 describe('Demo tests', () => {
-	it('Assert URL', () => {
+	beforeEach(() => {
 		cy.visit('https://example.com/')
+	})
+
+	it('Assert URL', () => {
 		cy.url().should('contain', 'example.com')
 	})
 
 	it('Assert Title', () => {
-		cy.visit('https://example.com/')
 		cy.title().should('contain', 'Example Domain')
 	})
 
 	it('Assert Element', () => {
-		cy.visit('https://example.com/')
 		cy.get('h1').should('be.visible')
 	})
 
 	it('Reload and logs', () => {
-		cy.visit('https://example.com/')
 		cy.log('Before reload')
 		cy.reload()
 		cy.log('After reload')
