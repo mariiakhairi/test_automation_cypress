@@ -1,8 +1,12 @@
 /// <reference types="Cypress"/>
 
+import ExamplePage from '../pages/ExamplePage'
+
 describe('Demo tests', () => {
+	const example = new ExamplePage()
+
 	beforeEach(() => {
-		cy.visit('https://example.com/')
+		example.openExamplePage()
 	})
 
 	afterEach(() => {
