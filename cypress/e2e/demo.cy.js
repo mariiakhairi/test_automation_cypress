@@ -14,11 +14,11 @@ describe('Demo tests', () => {
 	})
 
 	it('Assert URL', () => {
-		cy.url().should('contain', 'example.com')
+		example.assertUrl()
 	})
 
 	it('Assert Title', () => {
-		cy.title().should('contain', 'Example Domain')
+		example.assertTitle()
 	})
 
 	it('Assert Element', () => {
