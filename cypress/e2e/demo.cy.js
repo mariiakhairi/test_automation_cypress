@@ -10,4 +10,9 @@ describe('Demo tests', () => {
 		cy.visit('https://example.com/')
 		cy.title().should('contain', 'Example Domain')
 	})
+
+	it('Assert Element', () => {
+		cy.visit('https://example.com/')
+		cy.get('h1').should('be.visible')
+	})
 })
