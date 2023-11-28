@@ -5,6 +5,10 @@ describe('Demo tests', () => {
 		cy.visit('https://example.com/')
 	})
 
+	afterEach(() => {
+		cy.log('Running after each of my tests')
+	})
+
 	it('Assert URL', () => {
 		cy.url().should('contain', 'example.com')
 	})
