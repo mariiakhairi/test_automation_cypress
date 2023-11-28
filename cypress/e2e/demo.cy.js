@@ -15,4 +15,11 @@ describe('Demo tests', () => {
 		cy.visit('https://example.com/')
 		cy.get('h1').should('be.visible')
 	})
+
+	it('Reload and logs', () => {
+		cy.visit('https://example.com/')
+		cy.log('Before reload')
+		cy.reload()
+		cy.log('After reload')
+	})
 })
