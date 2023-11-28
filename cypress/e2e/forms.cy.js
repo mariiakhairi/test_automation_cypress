@@ -1,4 +1,5 @@
 /// <reference types="Cypress"/>
+
 describe('Forms, Buttons & Checkbox', () => {
 	it('Submit and assert form', () => {
 		// Variables with data
