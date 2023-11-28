@@ -1,0 +1,23 @@
+{
+  "name": "test_automation_cypress",
+  "version": "1.0.0",
+  "description": "Welcome to the Test Automation with Cypress repository! This repository serves as a showcase of various Cypress testing scenarios and automation strategies. Whether you're new to Cypress or an experienced QA professional, you'll find valuable examples and best practices here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariiakhairi/test_automation_cypress.git"
+  },
+  "author": "mariiakhairi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariiakhairi/test_automation_cypress/issues"
+  },
+  "homepage": "https://github.com/mariiakhairi/test_automation_cypress#readme",
+  "dependencies": {
+    "cypress": "^13.6.0",
+    "prettier": "^3.1.0"
+  }
+}
