@@ -4,9 +4,10 @@
   "description": "Welcome to the Test Automation with Cypress repository! This repository serves as a showcase of various Cypress testing scenarios and automation strategies. Whether you're new to Cypress or an experienced QA professional, you'll find valuable examples and best practices here.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "cypress run",
     "open": "cypress open",
-    "all": "cypress run --spec 'cypress/e2e/*' -- reporter json --browser chrome"
+    "test": "cypress run --spec 'cypress/e2e/*' -- reporter json --browser chrome", 
+    "snapshots": "cypress run --env updateSnapshots=true"
   },
   "repository": {
     "type": "git",
